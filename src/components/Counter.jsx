@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-export const Counter = () => {
+export const Counter = ({count}) => {
+    
     
   return (
-    <div>
-      
+    <div style={{textAlign:"center", fontSize:"30px", color:"white"}}>
+        Persons: {count>0 ? count : "today no more birthday"}
     </div>
   )
 }
